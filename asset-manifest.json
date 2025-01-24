@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/QuadRise/static/css/main.7ae06161.css",
+    "main.js": "/QuadRise/static/js/main.92306eb7.js",
+    "static/js/488.9c76a7e1.chunk.js": "/QuadRise/static/js/488.9c76a7e1.chunk.js",
+    "index.html": "/QuadRise/index.html",
+    "main.7ae06161.css.map": "/QuadRise/static/css/main.7ae06161.css.map",
+    "main.92306eb7.js.map": "/QuadRise/static/js/main.92306eb7.js.map",
+    "488.9c76a7e1.chunk.js.map": "/QuadRise/static/js/488.9c76a7e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ae06161.css",
+    "static/js/main.92306eb7.js"
+  ]
+}
