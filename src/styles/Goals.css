@@ -1,11 +1,10 @@
-/* Goals layout */
+
 .goals-container {
     min-height: 100vh;
     background-color: rgb(249, 250, 251);
     padding: 2rem;
   }
   
-  /* Progress Overview */
   .progress-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,7 +41,6 @@
     color: rgb(109, 40, 217);
   }
   
-  /* Goals List */
   .goals-list {
     background-color: white;
     border-radius: 0.75rem;
@@ -63,7 +61,6 @@
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
   
-  /* Priority Tags */
   .priority-tag {
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
@@ -86,7 +83,6 @@
     color: rgb(16, 185, 129);
   }
   
-  /* Status Indicators */
   .status-badge {
     display: flex;
     align-items: center;
@@ -106,7 +102,6 @@
     color: rgb(16, 185, 129);
   }
   
-  /* Responsive Design */
   @media (max-width: 1024px) {
     .progress-cards {
       grid-template-columns: repeat(2, 1fr);

@@ -8,7 +8,7 @@ import Sidebar from './components/Sidebar.js';
 import './styles/App.css';
 
 function App() {
-  const [currentView, setCurrentView] = useState('dashboard');
+  const [currentView, setCurrentView] = useState('goals');
 
   const renderView = () => {
     switch (currentView) {
@@ -23,7 +23,7 @@ function App() {
       case 'counselors':
         return <Counselors />;
       default:
-        return <Dashboard />; 
+        return <Goals />; 
     }
   };
 

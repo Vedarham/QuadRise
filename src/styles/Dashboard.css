@@ -1,11 +1,11 @@
-/* Dashboard layout */
+
 .dashboard-container {
     min-height: 100vh;
     background-color: rgb(249, 250, 251);
     padding: 2rem;
   }
   
-  /* Analytics Cards */
+  
   .analytics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -52,7 +52,7 @@
     color: rgb(202, 138, 4);
   }
   
-  /* Skills Progress */
+  
   .skills-progress {
     background-color: white;
     padding: 1.5rem;
@@ -74,7 +74,7 @@
     transition: width 0.3s ease;
   }
   
-  /* Events Section */
+ 
   .events-section {
     background-color: white;
     padding: 1.5rem;
@@ -90,11 +90,16 @@
     transition: border-color 0.2s;
   }
   
+button{
+    padding: 8px 16px;
+    background-color: white;
+    border: none;
+  }
   .event-card:hover {
     border-color: rgb(99, 102, 241);
   }
   
-  /* Responsive Design */
+ 
   @media (max-width: 1024px) {
     .analytics-grid {
       grid-template-columns: repeat(2, 1fr);

@@ -68,7 +68,7 @@ const upcomingEvents = [
 export default function Dashboard() {
   return (
     <div className="dashboard-container">
-      {/* Header */}
+      
       <header className="header">
         <div className="header-container">
           <div className="header-content">
@@ -83,7 +83,7 @@ export default function Dashboard() {
       </header>
 
       <main className="main-content">
-        {/* Analytics Cards */}
+      
         <div className="analytics-grid">
           <div className="analytics-card">
             <div className="card-content">
@@ -132,7 +132,7 @@ export default function Dashboard() {
         </div>
 
         <div className="content-grid">
-          {/* Skills Progress */}
+         
           <div className="skills-progress-container">
             <div className="skills-progress">
               <div className="progress-header">
@@ -163,7 +163,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Upcoming Events */}
+         
           <div className="events-container">
             <div className="events-section">
               <h2 className="section-title">Upcoming Events</h2>
@@ -194,7 +194,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Milestones */}
+    
           <div className="milestones-container">
             <div className="milestones-section">
               <div className="milestones-header">
