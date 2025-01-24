@@ -1,0 +1,114 @@
+/* Learning Path layout */
+.learning-path-container {
+    min-height: 100vh;
+    background-color: rgb(249, 250, 251);
+    padding: 2rem;
+  }
+  
+  /* AI Recommendation Section */
+  .ai-recommendation {
+    background: linear-gradient(135deg, rgb(79, 70, 229) 0%, rgb(147, 51, 234) 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .recommendation-tags {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .recommendation-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  /* Course Cards */
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .course-card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .course-content {
+    padding: 1.5rem;
+  }
+  
+  .course-tags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .course-level {
+    background-color: rgb(238, 242, 255);
+    color: rgb(79, 70, 229);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .course-category {
+    color: rgb(107, 114, 128);
+    font-size: 0.875rem;
+  }
+  
+  .course-progress {
+    margin-top: 1.5rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(229, 231, 235);
+    border-radius: 9999px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: rgb(79, 70, 229);
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .learning-path-container {
+      padding: 1rem;
+    }
+    
+    .courses-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .ai-recommendation {
+      padding: 1.5rem;
+    }
+  }

@@ -1,0 +1,127 @@
+/* Sidebar styles */
+.sidebar {
+  width: 16rem;
+  background-color: white;
+  border-right: 1px solid rgb(229, 231, 235);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  height: 2rem;
+  width: 2rem;
+  color: rgb(79, 70, 229);
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(75, 85, 99);
+}
+
+.nav-item:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.nav-item.active {
+  background-color: rgb(238, 242, 255);
+  color: rgb(79, 70, 229);
+}
+
+.nav-item-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.user-section {
+  padding: 1rem;
+  border-top: 1px solid rgb(229, 231, 235);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.user-avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  color: rgb(107, 114, 128);
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.action-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: rgb(75, 85, 99);
+  border-radius: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.action-button-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.75rem;
+}

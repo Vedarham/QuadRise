@@ -1,0 +1,124 @@
+/* Goals layout */
+.goals-container {
+    min-height: 100vh;
+    background-color: rgb(249, 250, 251);
+    padding: 2rem;
+  }
+  
+  /* Progress Overview */
+  .progress-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .progress-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .progress-icon {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .progress-icon.green {
+    background-color: rgb(236, 253, 245);
+    color: rgb(16, 185, 129);
+  }
+  
+  .progress-icon.yellow {
+    background-color: rgb(254, 249, 195);
+    color: rgb(202, 138, 4);
+  }
+  
+  .progress-icon.purple {
+    background-color: rgb(237, 233, 254);
+    color: rgb(109, 40, 217);
+  }
+  
+  /* Goals List */
+  .goals-list {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .goal-card {
+    padding: 1.5rem;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .goal-card:hover {
+    border-color: rgb(99, 102, 241);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Priority Tags */
+  .priority-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .priority-tag.high {
+    background-color: rgb(254, 242, 242);
+    color: rgb(220, 38, 38);
+  }
+  
+  .priority-tag.medium {
+    background-color: rgb(254, 249, 195);
+    color: rgb(202, 138, 4);
+  }
+  
+  .priority-tag.low {
+    background-color: rgb(236, 253, 245);
+    color: rgb(16, 185, 129);
+  }
+  
+  /* Status Indicators */
+  .status-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .status-badge.not-started {
+    color: rgb(107, 114, 128);
+  }
+  
+  .status-badge.in-progress {
+    color: rgb(202, 138, 4);
+  }
+  
+  .status-badge.completed {
+    color: rgb(16, 185, 129);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .progress-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .goals-container {
+      padding: 1rem;
+    }
+    
+    .progress-cards {
+      grid-template-columns: 1fr;
+    }
+  }

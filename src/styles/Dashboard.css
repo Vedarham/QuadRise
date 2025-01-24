@@ -1,0 +1,112 @@
+/* Dashboard layout */
+.dashboard-container {
+    min-height: 100vh;
+    background-color: rgb(249, 250, 251);
+    padding: 2rem;
+  }
+  
+  /* Analytics Cards */
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .analytics-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .analytics-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .analytics-icon {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .analytics-icon.purple {
+    background-color: rgb(237, 233, 254);
+    color: rgb(109, 40, 217);
+  }
+  
+  .analytics-icon.green {
+    background-color: rgb(236, 253, 245);
+    color: rgb(16, 185, 129);
+  }
+  
+  .analytics-icon.blue {
+    background-color: rgb(239, 246, 255);
+    color: rgb(59, 130, 246);
+  }
+  
+  .analytics-icon.yellow {
+    background-color: rgb(254, 249, 195);
+    color: rgb(202, 138, 4);
+  }
+  
+  /* Skills Progress */
+  .skills-progress {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .progress-bar {
+    height: 0.5rem;
+    background-color: rgb(229, 231, 235);
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Events Section */
+  .events-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .event-card {
+    padding: 1rem;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .event-card:hover {
+    border-color: rgb(99, 102, 241);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .analytics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .analytics-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .dashboard-container {
+      padding: 1rem;
+    }
+  }

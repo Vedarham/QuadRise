@@ -1,0 +1,11 @@
+/* App layout styles */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(249, 250, 251);
+}
+
+.main-content {
+  flex: 1;
+  overflow: auto;
+}
